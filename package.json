@@ -1,5 +1,5 @@
 {
-  "name": "monster",
+  "name": "pp",
   "private": true,
   "version": "0.0.0",
   "description": "a Sails application",
@@ -30,7 +30,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/tirtha/monster.git"
+    "url": "git://github.com/tirtha/pp.git"
   },
   "author": "tirtha",
   "license": ""
