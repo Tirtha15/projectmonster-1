@@ -8,7 +8,40 @@
 module.exports = {
 
   attributes: {
+  	id:{
+  		type: 'string',
+  		size: 36,
+  		primaryKey: true,
+  		unique: true,
+    },
+	amount:{
+		  type: 'string',
+		  numeric: true,
+		  required: true,
+	},
+	currency:{
+	    type:'string',
+	},
+	// reason:{
+	//     type:'string',
+	// },
+	description:{
+		type:'text',
+	},
+	day:{
+	    type:'string',
+	},
+	location:{
+		type:'string',
+	},
 
-  }
+	user:{
+	    model:'user'
+	}
+
+
+
+
+}
 };
 

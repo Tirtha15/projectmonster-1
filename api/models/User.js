@@ -29,5 +29,9 @@ module.exports = {
     deviceId: {
     	type:'string'
     },
+    income:{
+      collection: 'income',
+      via: 'user'
+    }
   }
 };
