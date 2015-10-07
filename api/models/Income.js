@@ -22,9 +22,6 @@ module.exports = {
 	currency:{
 	    type:'string',
 	},
-	// reason:{
-	//     type:'string',
-	// },
 	description:{
 		type:'text',
 	},
@@ -37,11 +34,11 @@ module.exports = {
 
 	user:{
 	    model:'user'
-	}
+	},
 
-
-
-
-}
+  	reason:{
+  		model:'reason',
+  	},
+  }
 };
 

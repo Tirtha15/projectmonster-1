@@ -32,6 +32,10 @@ module.exports = {
     income:{
       collection: 'income',
       via: 'user'
-    }
+    },
+expenses:{
+      collection:'expenses',
+      via:'user',
+    },
   }
 };
