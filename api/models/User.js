@@ -29,5 +29,10 @@ module.exports = {
     deviceId: {
     	type:'string'
     },
+    expenses:{
+      collection:'expenses',
+      via:'user',
+    },
+
   }
 };
