@@ -35,14 +35,27 @@ module.exports.routes = {
   '/': {
     view: 'homepage'
   },
+  'post /api/v1-0/incomeinsert':'IncomeController.create',
+  'put /api/v1-0/incomeupdate':'IncomeController.update',
+  'get /api/v1-0/incomefind':'IncomeController.find',
+  'delete /api/v1-0/incomedelete':'IncomeController.delete',
+  'get /api/v1-0/incomefindOne/:id':'IncomeController.findOne',
 
-  'post /api/v1-0/user':'UserController.create',
+  'post /api/v1-0/reasoncreate':'ReasonController.create',
+  'put /api/v1-0/reasonupdate':'ReasonController.update',
+  'get /api/v1-0/reasonfind':'ReasonController.find',
+  'get /api/v1-0/reasonfindOne/:id':'ReasonController.findOne',
+  'delete /api/v1-0/reasondelete':'ReasonController.delete',
+'post /api/v1-0/user':'UserController.create',
   'put /api/v1-0/userupdate':'UserController.update',
   'delete /api/v1-0/userdelete':'UserController.delete',
   'get /api/v1-0/userfind/:mobile/':'UserController.findOne',
   'get /api/v1-0/userall':'UserController.find',
-  
-   
+
+
+
+
+
 
   /***************************************************************************
   *                                                                          *
