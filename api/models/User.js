@@ -13,10 +13,10 @@ module.exports = {
       unique: true,
     },
     name: {
-    	type:'string'
+      type: 'string'
     },
     email: {
-    	type:'email'
+      type: 'email'
     },
     mobile: {
       type: 'string',
@@ -27,20 +27,22 @@ module.exports = {
       required: true,
     },
     deviceId: {
-    	type:'string'
+      type: 'string'
     },
-    income:{
+    income: {
       collection: 'income',
       via: 'user'
     },
-expenses:{
-      collection:'expenses',
-      via:'user',
+    expenses: {
+      collection: 'expenses',
+      via: 'user',
     },
   },
-  beforeCreate:function(values,next){
-     if(values.id){delete values.id;}
-     values.id = utils.uuid();
-     next();
+  beforeCreate: function(values, next) {
+    if (values.id) {
+      delete values.id;
+    }
+    values.id = utils.uuid();
+    next();
   }
 };
