@@ -33,9 +33,9 @@ module.exports = {
       collection: 'income',
       via: 'user'
     },
-expenses:{
+    expenses:{
       collection:'expenses',
       via:'user',
     },
-  }
+  },
 };

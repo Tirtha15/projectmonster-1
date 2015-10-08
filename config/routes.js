@@ -34,7 +34,15 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }
+  },
+
+  'post /api/v1-0/user':'UserController.create',
+  'put /api/v1-0/userupdate':'UserController.update',
+  'delete /api/v1-0/userdelete':'UserController.delete',
+  'get /api/v1-0/userfind/:mobile/':'UserController.findOne',
+  'get /api/v1-0/userall':'UserController.find',
+  
+   
 
   /***************************************************************************
   *                                                                          *
