@@ -19,52 +19,42 @@
  * For more information on configuring custom routes, check out:
  * http://sailsjs.org/#!/documentation/concepts/Routes/RouteTargetSyntax.html
  */
-
 module.exports.routes = {
-
   /***************************************************************************
-  *                                                                          *
-  * Make the view located at `views/homepage.ejs` (or `views/homepage.jade`, *
-  * etc. depending on your default view engine) your home page.              *
-  *                                                                          *
-  * (Alternatively, remove this and add an `index.html` file in your         *
-  * `assets` directory)                                                      *
-  *                                                                          *
-  ***************************************************************************/
-
+   *                                                                          *
+   * Make the view located at `views/homepage.ejs` (or `views/homepage.jade`, *
+   * etc. depending on your default view engine) your home page.              *
+   *                                                                          *
+   * (Alternatively, remove this and add an `index.html` file in your         *
+   * `assets` directory)                                                      *
+   *                                                                          *
+   ***************************************************************************/
   '/': {
     view: 'homepage'
   },
-  'post /api/v1-0/incomeinsert':'IncomeController.create',
-  'put /api/v1-0/incomeupdate':'IncomeController.update',
-  'get /api/v1-0/incomefind':'IncomeController.find',
-  'delete /api/v1-0/incomedelete':'IncomeController.delete',
-  'get /api/v1-0/incomefindOne/:id':'IncomeController.findOne',
-
-  'post /api/v1-0/reasoncreate':'ReasonController.create',
-  'put /api/v1-0/reasonupdate':'ReasonController.update',
-  'get /api/v1-0/reasonfind':'ReasonController.find',
-  'get /api/v1-0/reasonfindOne/:id':'ReasonController.findOne',
-  'delete /api/v1-0/reasondelete':'ReasonController.delete',
-'post /api/v1-0/user':'UserController.create',
-  'put /api/v1-0/userupdate':'UserController.update',
-  'delete /api/v1-0/userdelete':'UserController.delete',
-  'get /api/v1-0/userfind/:mobile/':'UserController.findOne',
-  'get /api/v1-0/userall':'UserController.find',
-
-
-
-
-
-
+  'post /api/v1-0/incomeinsert': 'IncomeController.create',
+  'put /api/v1-0/incomeupdate': 'IncomeController.update',
+  'get /api/v1-0/incomefind': 'IncomeController.find',
+  'delete /api/v1-0/incomedelete': 'IncomeController.delete',
+  'get /api/v1-0/incomefindOne/:id': 'IncomeController.findOne',
+  'post /api/v1-0/reasoncreate': 'ReasonController.create',
+  'put /api/v1-0/reasonupdate': 'ReasonController.update',
+  'get /api/v1-0/reasonfind': 'ReasonController.findAll',
+  'get /api/v1-0/reasonfindOne/:name': 'ReasonController.findOne',
+  'delete /api/v1-0/reasondelete': 'ReasonController.delete',
+  //for user
+  'post /api/v1-0/createuser': 'UserController.create',
+  'put /api/v1-0/updateuser': 'UserController.update',
+  'delete /api/v1-0/deleteuser': 'UserController.delete',
+  'get /api/v1-0/finduser/:mobile/': 'UserController.findOne',
+  'get /api/v1-0/alluser': 'UserController.findAll',
   /***************************************************************************
-  *                                                                          *
-  * Custom routes here...                                                    *
-  *                                                                          *
-  * If a request to a URL doesn't match any of the custom routes above, it   *
-  * is matched against Sails route blueprints. See `config/blueprints.js`    *
-  * for configuration options and examples.                                  *
-  *                                                                          *
-  ***************************************************************************/
-
+   *                                                                          *
+   * Custom routes here...                                                    *
+   *                                                                          *
+   * If a request to a URL doesn't match any of the custom routes above, it   *
+   * is matched against Sails route blueprints. See `config/blueprints.js`    *
+   * for configuration options and examples.                                  *
+   *                                                                          *
+   ***************************************************************************/
 };
