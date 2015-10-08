@@ -37,5 +37,10 @@ expenses:{
       collection:'expenses',
       via:'user',
     },
+  },
+  beforeCreate:function(values,next){
+     if(values.id){delete values.id;}
+     values.id = utils.uuid();
+     next();
   }
 };
